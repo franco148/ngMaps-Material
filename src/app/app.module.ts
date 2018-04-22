@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-// Angular Material
-import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
+// Moving material dependencies to material.module.ts
 
 import { AppComponent } from './app.component';
+import { MaterialModule } from './material.module';
 
 
 @NgModule({
@@ -17,8 +16,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatButtonModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
