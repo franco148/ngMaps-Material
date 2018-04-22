@@ -7,11 +7,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
+import { MapsComponent } from './components/maps/maps.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,
