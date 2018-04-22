@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { MapsComponent } from './components/maps/maps.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { MapsComponent } from './components/maps/maps.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAORmAqH2yaf9VATdFU4pczSi2lStAf9E8'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
