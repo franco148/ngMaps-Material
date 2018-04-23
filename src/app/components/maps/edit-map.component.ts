@@ -27,7 +27,7 @@ export class EditMapComponent implements OnInit {
   }
 
   saveChanges() {
-
+    this.dialogRef.close(this.form.value);
   }
 
   onNoClick(): void {
