@@ -11,6 +11,7 @@ import { MapsComponent } from './components/maps/maps.component';
 import { EditMapComponent } from './components/maps/edit-map.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { AgmCoreModule } from '@agm/core';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    ReactiveFormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAORmAqH2yaf9VATdFU4pczSi2lStAf9E8'
     })

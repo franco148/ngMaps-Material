@@ -8,6 +8,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 // When we have two modules and we need to specify in which we want to import our modules.
 //  ng g c components/maps --module=app.module --spec=false -is
@@ -21,7 +22,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatProgressBarModule,
     MatCardModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
   ],
   exports: [
     MatToolbarModule,
@@ -29,7 +31,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatProgressBarModule,
     MatCardModule,
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
   ],
   declarations: []
 })
