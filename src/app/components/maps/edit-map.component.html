@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Marker title" formControlName="title">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <textarea rows="3" matInput placeholder="Marker description" formControlName="description"></textarea>
+    </mat-form-field>
+
+    <button (click)="saveChanges()" mat-raised-button color="primary">Save</button>
+    <!-- There was an issue, window was been refreshed every time the popup was being closed. A solution would be
+    type="button". Another is import reactive forms. -->
+    <!-- <button (click)="onNoClick()" type="button" mat-raised-button color="warn">Cancel</button> -->
+    <button (click)="onNoClick()" mat-raised-button color="warn">Cancel</button>
+</form>
