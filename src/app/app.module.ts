@@ -8,14 +8,20 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { MapsComponent } from './components/maps/maps.component';
+import { EditMapComponent } from './components/maps/edit-map.component';
 
 import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
+  // The following is when we need to use an external component for popups for example
+  entryComponents: [
+    EditMapComponent
+  ],
   declarations: [
     AppComponent,
-    MapsComponent
+    MapsComponent,
+    EditMapComponent
   ],
   imports: [
     BrowserModule,

@@ -15,7 +15,7 @@
                     </p>
 
                     <div>
-                        <button mat-raised-button color="primary">Edit</button>
+                        <button (click)="editMarker( marker )" mat-raised-button color="primary">Edit</button>
                         <button (click)="removeMarker(idx)" mat-raised-button color="warn">Remove</button>
                     </div>
                 </agm-info-window>
