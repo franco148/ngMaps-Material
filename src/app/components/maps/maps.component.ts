@@ -38,6 +38,11 @@ export class MapsComponent implements OnInit {
     this.saveInfoToLocalStorage();
   }
 
+  removeMarker(index: number) {
+    this.markers.splice(index, 1);
+    this.saveInfoToLocalStorage();
+  }
+
   saveInfoToLocalStorage() {
     localStorage.setItem('mapMarkers', JSON.stringify(this.markers));
   }
